@@ -1,48 +1,197 @@
 <script setup>
+const form = ref(null);
+
 const { data: posts } = await useAsyncData("latest-posts", () =>
-  queryContent("/projets").sort({ data: 1 }).limit(3).find()
+  queryContent("/projets").find()
 );
+
+const sortedPosts = posts.value.sort((a, b) => {
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+
+  return dateB - dateA;
+});
+
+const firstThreePosts = sortedPosts.slice(0, 3);
+
+const query = gql`
+  {
+    viewer {
+      repositories(first: 3, orderBy: { field: CREATED_AT, direction: DESC }) {
+        totalCount
+        nodes {
+          id
+          name
+          createdAt
+          description
+          url
+          forks {
+            totalCount
+          }
+          watchers {
+            totalCount
+          }
+          stargazers {
+            totalCount
+          }
+        }
+      }
+    }
+  }
+`;
+const { data: repos } = await useAsyncQuery(query);
+
+let nextSectionId = ref("section1");
+let direction = ref("down");
+
+// ref pour l'animation des blocs
+let section1 = ref(null);
+let githubs = ref(null);
+let contact = ref(null);
+
+// Fonction pour faire défiler les sections
+const scrollSection = () => {
+  if (nextSectionId.value === "section1") {
+    direction.value = "down";
+    nextSectionId.value = "section2";
+  } else if (nextSectionId.value === "section2") {
+    if (direction.value === "down") {
+      nextSectionId.value = "section3";
+      direction.value = "down";
+    } else {
+      nextSectionId.value = "section1";
+      direction.value = "down";
+    }
+  } else if (nextSectionId.value === "section3") {
+    if (direction.value === "down") {
+      nextSectionId.value = "section4";
+      direction.value = "up";
+    } else {
+      nextSectionId.value = "section2";
+      direction.value = "up";
+    }
+  } else if (nextSectionId.value === "section4") {
+    direction.value = "up";
+    nextSectionId.value = "section3";
+  }
+  const sectionElement = document.getElementById(nextSectionId.value);
+  sectionElement.scrollIntoView({ behavior: "smooth" });
+};
+
+onMounted(async () => {
+  const scrollButton = document.getElementById("scrollButton");
+  scrollButton.addEventListener("click", scrollSection);
+
+  let observer;
+
+  if (typeof window !== "undefined") {
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+    // Observer les sections avec l'IntersectionObserver
+    observer.observe(section1.value);
+    observer.observe(githubs.value);
+    observer.observe(contact.value);
+
+    document.querySelectorAll(".project").forEach((item) => {
+      observer.observe(item);
+    });
+  }
+});
 </script>
 
 <template>
-  <section>
-    <h1 class="text-5xl font-bold mt-20">👋🏻 Hello, I'm Dan Vega!</h1>
-    <p class="text-base text-gray-900 p-2 italic">
-      Spring Developer Advocate at VMware
-    </p>
-  </section>
-  <section class="flex flex-col md:flex-row">
-    <div class="md:w-3/4">
-      <h2 class="text-3xl font-bold mt-8">My Story</h2>
-      <p class="text-lg py-2">
-        I am a Software Engineer living just outside of one of my favorite
-        places in the world, Cleveland, Ohio. I am a self-taught programmer who
-        firmly believes that you can accomplish anything in this life if you put
-        your mind to it, roll up your sleeves and are willing to put in the
-        work.
+  <section
+    id="section1"
+    ref="section1"
+    class="hide min-h-screen flex flex-col md:flex-row items-center justify-center"
+  >
+    <div class="md:w-2/4">
+      <h1 class="text-5xl font-bold">Welcome to my dev world</h1>
+      <p class="text-base text-gray-900 mt-3 italic">
+        Sofiane EL BAR, développeur web et web mobile
       </p>
-      <p class="text-lg py-2">
-        I have been writing software for over 20+ years now and I use my
-        knowledge, passion, and influence to help other developers achieve their
-        goals. I teach online and currently, have over 160,000 students.
+      <h2 class="text-3xl font-bold mt-8">Qui suis-je ?</h2>
+      <p class="text-lg text-justify py-2">
+        Développeur web full stack junior passionné et curieux d'apprendre, je
+        suis à la recherche de nouvelles aventures dans le monde du
+        développement. Mon enthousiasme pour la collaboration et mon désir de
+        créer des applications qui apportent une réelle valeur font de moi un
+        atout précieux pour votre équipe. Prêts à coder des solutions innovantes
+        ensemble? 💻🚀
       </p>
-      <p class="text-lg py-2">
-        In my personal life I am a husband to my best friend in the world and a
-        father of two little girls. I enjoy reading, running and lifting weights
-        to get me through the week.
-      </p>
-      <p class="text-lg py-2">Ceci est un test de déploiement.</p>
     </div>
-    <img
-      src="~/assets/images/danvega-avatar.png"
-      class="w-1/2 md:max-w-sm p-8 mx-auto"
-    />
+    <video
+      src="~/assets/videos/sof.mp4"
+      autoplay
+      loop
+      muted
+      class="w-2/4 md:max-w-sm m-28 my-auto rounded-lg shadow-xl"
+    >
+      Désolé, votre navigateur ne prend pas en charge les vidéos intégrées.
+    </video>
   </section>
 
-  <section>
-    <h2 class="text-3xl font-bold mt-8">Latest Blog Posts</h2>
-    <div class="grid md:grid-cols-3 pt-8 gap-10">
-      <Post :posts="posts" />
+  <section id="section2" class="min-h-screen flex flex-col justify-center">
+    <h2 class="text-3xl font-bold mt-8">Mes derniers projets</h2>
+    <div class="grid md:grid-cols-3 pt-8 mb-10 gap-10">
+      <Post class="project hide" :posts="firstThreePosts" />
     </div>
   </section>
+
+  <section id="section3" class="min-h-screen flex flex-col justify-center">
+    <h2 class="text-3xl font-bold mt-8">Mes derniers Repo Github</h2>
+    <div ref="githubs" class="hide grid md:grid-cols-3 pt-8 mb-10 gap-10">
+      <Repo :repos="repos" />
+    </div>
+  </section>
+
+  <section
+    id="section4"
+    ref="contact"
+    class="hide flex flex-col min-h-screen justify-center"
+  >
+    <div class="mx-auto w-full">
+      <h1 class="text-4xl font-medium">Restons en contact</h1>
+      <p class="mt-3">N'hésitez pas à m'envoyer un mail au besoin</p>
+      <Contact :form="form" />
+    </div>
+  </section>
+
+  <button id="scrollButton" class="fixed bottom-4 left-1/2">
+    <img
+      :src="
+        direction === 'down' ? '/images/down-arrow.svg' : '/images/up-arrow.svg'
+      "
+      alt="Scroll arrow"
+      class="w-12 h-12"
+    />
+  </button>
 </template>
+
+<style>
+.hide {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.project:nth-child(2) {
+  transition-delay: 150ms;
+}
+.project:nth-child(3) {
+  transition-delay: 200ms;
+}
+</style>
