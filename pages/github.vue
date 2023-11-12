@@ -26,7 +26,6 @@ const query = gql`
 `;
 
 const { data: repos } = await useAsyncQuery(query);
-console.log(repos);
 </script>
 
 <template>
