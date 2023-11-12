@@ -37,7 +37,7 @@ const sendEmail = (e) => {
           placeholder=" "
         />
         <label
-          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-black duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-black duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
           >Votre nom</label
         >
       </div>
@@ -50,7 +50,7 @@ const sendEmail = (e) => {
           required
         />
         <label
-          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-black duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-black duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
           >Votre email</label
         >
       </div>
@@ -63,7 +63,7 @@ const sendEmail = (e) => {
           required
         ></textarea>
         <label
-          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-black duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-black duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
           >Votre message</label
         >
       </div>

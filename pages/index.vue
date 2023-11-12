@@ -159,7 +159,7 @@ onMounted(async () => {
   >
     <div class="mx-auto w-full">
       <h1 class="text-4xl font-medium">Restons en contact</h1>
-      <p class="mt-3">N'hésitez pas à m'envoyer un mail au besoin</p>
+      <p class="mt-3 text-lg">N'hésitez pas à m'envoyer un mail au besoin</p>
       <Contact :form="form" />
     </div>
   </section>
