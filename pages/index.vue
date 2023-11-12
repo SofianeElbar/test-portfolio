@@ -113,7 +113,7 @@ onMounted(async () => {
     class="hide min-h-screen flex flex-col md:flex-row items-center justify-center"
   >
     <div class="md:w-2/4">
-      <h1 class="text-5xl font-bold">Welcome to my dev world</h1>
+      <h1 class="text-4xl font-bold"># Welcome to my dev journey #</h1>
       <p class="text-base text-gray-900 mt-3 italic">
         Sofiane EL BAR, développeur web et web mobile
       </p>
