@@ -13,7 +13,7 @@ cover: header_tenk_site.jpg
 
 Pour le projet front-end, qui est codé en nuxt/vue, nous avons principalement recyclé des composants initialemement présents sur le projet pour insérer les commentaires dans un rail avec un défilement horizontal au delà de trois commentaires.
 
-![Espace commentaire](/images/projets/commentaire.jpg)
+![Espace commentaire](/images/projets/comments.jpg)
 
 De même, nous avons paramétré le Dashboard des modérateurs afin que ces derniers puissent ranger les commentaires émis selon trois catégories d'action : à relire, valider, rejeter.
 
