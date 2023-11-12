@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(["posts"]);
+const props = defineProps({ posts: Array, post: Object });
 
 function blur(element, transitionFactor) {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
