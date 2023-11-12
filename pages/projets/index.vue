@@ -2,17 +2,22 @@
 const { data: posts } = await useAsyncData("posts", () =>
   queryContent("/projets").find()
 );
+
+const sortedPosts = posts.value.sort((a, b) => {
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+
+  return dateB - dateA;
+});
 </script>
 
 <template>
-  <h1 class="text-3xl my-8">Blog Posts</h1>
+  <h1 class="text-3xl my-8">Divers projets</h1>
 
-  I like to write about anything thta I am currently working or something new
-  that interests me. If you would like me to write about something or be a guest
-  blogger on your blog please reach out to me on Twitter. If you would like to
-  subscribe to an RSS feed you can find it here.
+  Voici une liste non exhaustive de mes projets web, qu'ils soient personnels ou
+  professionels
 
-  <section class="grid md:grid-cols-3 mt-8 gap-10">
+  <section class="grid md:grid-cols-3 mt-8 mb-8 gap-10">
     <Post :posts="posts" />
   </section>
 </template>
