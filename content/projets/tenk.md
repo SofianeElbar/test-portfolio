@@ -2,7 +2,7 @@
 title: Plateforme Tënk
 description: Implémentation d'une section commentaires pour le site de Tënk.
 date: 2023-06-05
-cover: header_tenk.jpg
+cover: header_tenk_site.jpg
 ---
 
 # Création d'une section commentaires et maintenance du site Tënk 🖈
@@ -13,11 +13,11 @@ cover: header_tenk.jpg
 
 Pour le projet front-end, qui est codé en nuxt/vue, nous avons principalement recyclé des composants initialemement présents sur le projet pour insérer les commentaires dans un rail avec un défilement horizontal au delà de trois commentaires.
 
-![Espace commentaire](/images/projets/commentaires.jpg)
+![Espace commentaire](/images/projets/commentaire.jpg)
 
 De même, nous avons paramétré le Dashboard des modérateurs afin que ces derniers puissent ranger les commentaires émis selon trois catégories d'action : à relire, valider, rejeter.
 
-![Espace modération](/images/projets/moderation.jpg)
+![Espace modération](/images/projets/moderations.jpg)
 
 Si vous voulez jeter un coup d'oeil au site de Tënk, et pourquoi pas vous abonner, les films valent vraiment le détour, <a href="https://www.on-tenk.com/fr" target="_blank">c'est par ici ;)</a>
 
