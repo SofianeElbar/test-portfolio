@@ -170,7 +170,7 @@ onMounted(async () => {
         direction === 'down' ? '/images/down-arrow.svg' : '/images/up-arrow.svg'
       "
       alt="Scroll arrow"
-      class="w-12 h-12"
+      class="w-12 h-12 md:w-16 md:h-16 orange-icon"
     />
   </button>
 </template>
@@ -193,5 +193,12 @@ onMounted(async () => {
 }
 .project:nth-child(3) {
   transition-delay: 200ms;
+}
+
+@media (max-width: 600px) {
+  .orange-icon {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(99%) saturate(6703%)
+      hue-rotate(360deg) brightness(102%) contrast(101%);
+  }
 }
 </style>
