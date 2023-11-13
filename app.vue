@@ -1,7 +1,7 @@
 <template>
   <div
-    class="flex flex-col min-h-screen bg-cover bg-center bg-fixed"
-    style="background-image: url('/images/background.jpg')"
+    class="flex flex-col min-h-screen bg-cover"
+    style="background-image: url('/images/pastel-background.jpg')"
   >
     <SiteHeader />
     <main

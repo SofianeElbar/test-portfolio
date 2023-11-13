@@ -1,7 +1,7 @@
 ---
 title: Projet de blog sur l'IT
 description: Blog qui permettra à terme d'échanger sur le futur du web.
-date: 2023-03-24
+date: 2023-01-24
 cover: b.jpg
 ---
 
