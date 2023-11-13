@@ -113,17 +113,17 @@ onMounted(async () => {
     class="hide min-h-screen flex flex-col md:flex-row items-center justify-center"
   >
     <div class="md:w-2/4">
-      <h1 class="text-4xl font-bold"># Welcome to my dev journey #</h1>
+      <h1 class="text-4xl font-bold">§ Welcome to my dev journey §</h1>
       <p class="text-base text-gray-900 mt-3 italic">
         Sofiane EL BAR, développeur web et web mobile
       </p>
       <h2 class="text-3xl font-bold mt-8">Qui suis-je ?</h2>
       <p class="text-lg text-justify py-2">
-        Développeur web full stack junior passionné et curieux d'apprendre, je
-        suis à la recherche de nouvelles aventures dans le monde du
-        développement. Mon enthousiasme pour la collaboration et mon désir de
-        créer des applications qui apportent une réelle valeur font de moi un
-        atout précieux pour votre équipe. Prêts à coder des solutions innovantes
+        Développeur web full stack passionné et curieux d'apprendre, je suis à
+        la recherche de nouvelles aventures dans le monde du développement. Mon
+        enthousiasme pour la collaboration et mon désir de créer des
+        applications qui apportent une réelle valeur font de moi un atout
+        précieux pour votre équipe. Prêts à coder des solutions innovantes
         ensemble? 💻🚀
       </p>
     </div>
