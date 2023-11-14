@@ -11,7 +11,7 @@ cover: header_tenk_site.jpg
 
 <font color="black">Ce projet a nécessité la création d'un back-end pour stocker les données nouvellement créées, en l'occurence le nom, commentaire de l'abonné et sa date de création. Nous avons décidé conjointement avec mon collègue et notre lead developpeur d'opter pour l'implémentaion d'un micro-service hérité de Laraval : Lumen.
 
-Pour le projet front-end, qui est codé en nuxt/vue, nous avons principalement recyclé des composants initialemement présents sur le projet pour insérer les commentaires dans un rail avec un défilement horizontal au delà de trois commentaires.
+Pour le projet front-end, qui est codé en nuxt/vue, nous avons principalement recyclé des composants initialemement présents sur le projet pour insérer les commentaires dans un rail avec un défilement horizontal.
 
 ![Espace commentaire](/images/projets/comments.jpg)
 
@@ -110,7 +110,7 @@ Voici la requête SQL permettant la création d'une ligne dans la table commenta
 
 Afin de faire communiquer le front de Tënk à notre back, nous avons créé un fichier
 typescript dans lequel nous avons déclaré une classe CommentService afin d'interagir avec
-notre base de données via des requêtes html.
+notre base de données via des requêtes HTTP.
 Voici la requête pour le fetch des avis par film :
 
 ```js

@@ -9,7 +9,7 @@ cover: tv-app.jpg
 
 ## Présentation du projet 📜
 
-<font color="black">Le but de l'application est de fetcher les données d'une API en ligne, pour les afficher par la suite dans un template prédéfini. L'application fonctionne en tiroir car elle permet à partir d'une série de retrouver l'ensemble des acteurs impliqués ainsi que l'ensemble des projets auxquels ils ont participé.
+<font color="black">Le but de l'application est de fetcher les données d'une API en ligne, pour les afficher par la suite dans un template prédéfini. L'application fonctionne en tiroir car elle permet à partir d'une série TV de retrouver l'ensemble des acteurs impliqués ainsi que l'ensemble des projets auxquels ils ont participé.
 
 Pour ce projet, j'ai utilisé la bibliothèque React.
 

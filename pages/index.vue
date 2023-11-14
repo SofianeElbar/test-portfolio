@@ -119,6 +119,11 @@ onMounted(async () => {
       </p>
       <h2 class="text-3xl font-bold mt-8">Qui suis-je ?</h2>
       <p class="text-lg text-justify py-2">
+        Suite à une carrière dans l'évènementiel, je me suis lancé un défi :
+        faire de ma passion pour le numérique et l'informatique mon nouveau
+        métier.
+      </p>
+      <p class="text-lg text-justify py-2">
         Développeur web full stack passionné et curieux d'apprendre, je suis à
         la recherche de nouvelles aventures dans le monde du développement. Mon
         enthousiasme pour la collaboration et mon désir de créer des
@@ -164,15 +169,22 @@ onMounted(async () => {
     </div>
   </section>
 
-  <button id="scrollButton" class="fixed bottom-4 left-1/2">
-    <img
-      :src="
-        direction === 'down' ? '/images/down-arrow.svg' : '/images/up-arrow.svg'
-      "
-      alt="Scroll arrow"
-      class="w-12 h-12 md:w-16 md:h-16 orange-icon"
-    />
-  </button>
+  <div
+    id="scrollButton"
+    class="fixed bottom-4 left-0 right-0 flex items-center justify-center"
+  >
+    <button>
+      <img
+        :src="
+          direction === 'down'
+            ? '/images/down-arrow.svg'
+            : '/images/up-arrow.svg'
+        "
+        alt="Scroll arrow"
+        class="w-12 h-12 md:w-16 md:h-16 orange-icon"
+      />
+    </button>
+  </div>
 </template>
 
 <style>

@@ -17,7 +17,7 @@ cover: portfo.jpg
 
 ## Exploitation de mes données Github grâce à GraphQL 📐
 
-L'une des features que j'ai trouvé amusante à implémenter est le fetch de mes données Github directement sur mon portfolio en exploitant l'API GraphQL fourni par Github. Après avoir créé l'arborescence de mes données à exploiter sur l'explorer de Github, j'ai pu fetcher ces données grâce à une requête gql.
+L'une des features que j'ai trouvée amusante à implémenter est le fetch de mes données Github directement sur mon portfolio en exploitant l'API GraphQL fourni par Github. Après avoir créé l'arborescence de mes données à exploiter sur l'explorer de Github, j'ai pu fetcher ces données grâce à une requête gql.
 
 ```js
 const query = gql`
