@@ -113,7 +113,7 @@ onMounted(async () => {
     class="hide min-h-screen flex flex-col md:flex-row items-center justify-center"
   >
     <div class="md:w-2/4">
-      <h1 class="title">♦ Welcome to my dev journey</h1>
+      <h1 class="main">♦ Welcome to my dev journey</h1>
       <p class="text-base text-gray-900 mt-3 italic">
         Sofiane EL BAR, développeur web et web mobile
       </p>
@@ -214,7 +214,7 @@ onMounted(async () => {
   }
 }
 
-.title {
+.main {
   font-size: 2.55rem;
   font-weight: bold;
 }
