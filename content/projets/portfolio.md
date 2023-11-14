@@ -5,9 +5,9 @@ date: 2023-02-05
 cover: portfo.jpg
 ---
 
-# Portfolio regroupant une partie de mes projets 📌
+# 📌 Portfolio regroupant une partie de mes projets
 
-## Utilisation du module Nuxt Content 📜
+## 📜 Utilisation du module Nuxt Content
 
 <font color="black">Je voulais concevoir ce portfolio de telle sorte à ce qu'il puisse me permettre de rentrer dans le détail technique des diverses réalisations que j'ai pu prendre en charge. Je me suis tourné vers le framework Nuxt3 de Vue car au delà de sa faculté à générer des pages statiques côté serveur pour gagner en fluidité, ce dernier me permettait grâce à son module Nuxt Content de personnaliser de manière simple le contenu de mes articles en utilisant une logique de rédaction se rapporochant d'un CMS. Cet outil m'a permis notamment de prendre en charge la syntaxe Markdown et d'afficher du code colorisé dans des blocs.
 
@@ -15,7 +15,7 @@ cover: portfo.jpg
 
 <figure><img style="display: block; margin-left: auto; margin-right: auto" src="/images/projets/c-highlight.jpg" alt="code highlighting"></img><figcaption><center><font color="black">Syntaxe pour créer un bloc de code</center></figcaption></figure>
 
-## Exploitation de mes données Github grâce à GraphQL 📐
+## 📐 Exploitation de mes données Github grâce à GraphQL
 
 L'une des features que j'ai trouvée amusante à implémenter est le fetch de mes données Github directement sur mon portfolio en exploitant l'API GraphQL fourni par Github. Après avoir créé l'arborescence de mes données à exploiter sur l'explorer de Github, j'ai pu fetcher ces données grâce à une requête gql.
 

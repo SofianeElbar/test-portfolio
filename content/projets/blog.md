@@ -5,9 +5,9 @@ date: 2023-01-24
 cover: b.jpg
 ---
 
-# Projet de blog pour se tenir informé de l'actualité du web 📌
+# 📌 Projet de blog pour se tenir informé de l'actualité du web
 
-## Présentation du projet 📜
+## 📜 Présentation du projet
 
 <font color="black">Ceci est un projet personnel que j'ai utilisé afin de m'initier à la stack Node.js. L'idée principale est de créer des articles et de les stocker sur une base de données hébergée sur MongoDB Atlas. Le projet est encore en développement.
 
@@ -15,7 +15,7 @@ cover: b.jpg
 
 <figure><img style="display: block; margin-left: auto; margin-right: auto" src="/images/projets/b-create.jpg" alt="tv-app-search"></img><figcaption><center><font color="black">Formulaire pour la création d'un article</center></figcaption></figure>
 
-## Aspects techniques 📐
+## 📐 Aspects techniques
 
 Pour faciliter la gestion de mon backend, j'ai utilisé le framework Express.js ainsi que l'Object data Modeling (ODM) Mongoose.js afin de "modeler" la structure de mes données. Voici comment j'ai défini l'Object Relational Mapper (ORM) pour la structure des données relatives aux articles qui doivent apparaître sur le blog.
 

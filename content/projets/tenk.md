@@ -5,9 +5,9 @@ date: 2023-06-05
 cover: header_tenk_site.jpg
 ---
 
-# Création d'une section commentaires et maintenance du site Tënk 📌
+# 📌 Création d'une section commentaires et maintenance du site Tënk
 
-## Présentation du projet 📜
+## 📜 Présentation du projet
 
 <font color="black">Ce projet a nécessité la création d'un back-end pour stocker les données nouvellement créées, en l'occurence le nom, commentaire de l'abonné et sa date de création. Nous avons décidé conjointement avec mon collègue et notre lead developpeur d'opter pour l'implémentaion d'un micro-service hérité de Laraval : Lumen.
 
@@ -21,7 +21,7 @@ De même, nous avons paramétré le Dashboard des modérateurs afin que ces dern
 
 Si vous voulez jeter un coup d'oeil au site de Tënk, et pourquoi pas vous abonner, les films valent vraiment le détour, <a href="https://www.on-tenk.com/fr" target="_blank">c'est par ici ;)</a>
 
-## Aspects techniques 📐
+## 📐 Aspects techniques
 
 La mise en place du projet étant complexe, j'ai décidé pour plus de clarté de me focaliser sur deux aspects uniquement :
 

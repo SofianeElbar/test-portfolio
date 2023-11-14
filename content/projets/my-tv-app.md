@@ -5,9 +5,9 @@ date: 2023-04-24
 cover: tv-app.jpg
 ---
 
-# Application de recherche de séries à partir d'une API 📌
+# 📌 Application de recherche de séries à partir d'une API
 
-## Présentation du projet 📜
+## 📜 Présentation du projet
 
 <font color="black">Le but de l'application est de fetcher les données d'une API en ligne, pour les afficher par la suite dans un template prédéfini. L'application fonctionne en tiroir car elle permet à partir d'une série TV de retrouver l'ensemble des acteurs impliqués ainsi que l'ensemble des projets auxquels ils ont participé.
 
@@ -21,7 +21,7 @@ Pour ce projet, j'ai utilisé la bibliothèque React.
 
 Si vous souhaitez jeter un coup d'oeil à l'application <a href="https://my-web-app-64479.web.app/" target="_blank">c'est par ici ;)</a>
 
-## Aspects techniques 📐
+## 📐 Aspects techniques
 
 Afin de récupérer les données de l'API sur les séries et les acteurs qui y participent j'ai utilisé le hook de React useEffect. Le hook useState m'a permis quant à lui de déclarer mes deux variables d'état show et actors que je mets respectivement à jour grâce aux fonctions setShow et setActors.
 
