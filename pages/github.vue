@@ -34,7 +34,7 @@ const { data: repos } = await useAsyncQuery(query);
     Si vous désirez jeter un coup d'oeil au code source de mes projets, vous
     êtes sur la bonne page ;)
   </p>
-  <section class="grid grid-cols-2 mb-10 gap-10">
+  <section class="grid md:grid-cols-2 mb-10 gap-10">
     <Repo :repos="repos" />
   </section>
 </template>
