@@ -5,7 +5,7 @@ date: 2023-02-05
 cover: portfo.jpg
 ---
 
-# Portfolio regroupant une partie de mes projets 🖈
+# Portfolio regroupant une partie de mes projets 📌
 
 ## Utilisation du module Nuxt Content 📜
 

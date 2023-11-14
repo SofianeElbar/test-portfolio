@@ -5,7 +5,7 @@ date: 2023-01-24
 cover: b.jpg
 ---
 
-# Projet de blog pour se tenir informé de l'actualité du web 🖈
+# Projet de blog pour se tenir informé de l'actualité du web 📌
 
 ## Présentation du projet 📜
 

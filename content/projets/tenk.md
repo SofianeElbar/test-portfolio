@@ -5,7 +5,7 @@ date: 2023-06-05
 cover: header_tenk_site.jpg
 ---
 
-# Création d'une section commentaires et maintenance du site Tënk 🖈
+# Création d'une section commentaires et maintenance du site Tënk 📌
 
 ## Présentation du projet 📜
 

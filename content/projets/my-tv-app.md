@@ -5,7 +5,7 @@ date: 2023-04-24
 cover: tv-app.jpg
 ---
 
-# Application de recherche de séries à partir d'une API 🖈
+# Application de recherche de séries à partir d'une API 📌
 
 ## Présentation du projet 📜
 
