@@ -12,7 +12,7 @@ const sortedPosts = posts.value.sort((a, b) => {
 </script>
 
 <template>
-  <h1 class="text-3xl my-8">¤ Divers projets ¤</h1>
+  <h1 class="text-3xl my-8">¤ Divers projets</h1>
   <p class="text-lg mb-8">
     Voici une liste non exhaustive de mes projets web, qu'ils soient personnels
     ou professionels

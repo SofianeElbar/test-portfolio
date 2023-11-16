@@ -29,7 +29,7 @@ const { data: repos } = await useAsyncQuery(query);
 </script>
 
 <template>
-  <h1 class="text-3xl my-8">¤ Codes sources de mes projets sur GitHub ¤</h1>
+  <h1 class="text-3xl my-8">¤ Codes sources de mes projets sur GitHub</h1>
   <p class="text-lg mb-8">
     Si vous désirez jeter un coup d'oeil au code source de mes projets, vous
     êtes sur la bonne page ;)

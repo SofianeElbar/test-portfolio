@@ -160,7 +160,7 @@ onMounted(async () => {
   <section
     id="section4"
     ref="contact"
-    class="hide flex flex-col min-h-screen justify-center"
+    class="hide min-h-screen flex flex-col justify-center"
   >
     <div class="mx-auto w-full">
       <h1 class="text-4xl font-medium">Restons en contact</h1>
@@ -171,7 +171,7 @@ onMounted(async () => {
 
   <div
     id="scrollButton"
-    class="fixed bottom-4 left-0 right-0 flex items-center justify-center"
+    class="fixed bottom-4 left-20 right-20 flex items-center justify-center"
   >
     <button>
       <img
