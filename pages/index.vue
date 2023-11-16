@@ -137,7 +137,7 @@ onMounted(async () => {
       autoplay
       loop
       muted
-      class="w-2/4 md:max-w-sm m-28 my-auto rounded-lg shadow-xl"
+      class="w-3/4 md:max-w-sm m-28 my-auto rounded-lg shadow-xl"
     >
       Désolé, votre navigateur ne prend pas en charge les vidéos intégrées.
     </video>
@@ -169,11 +169,8 @@ onMounted(async () => {
     </div>
   </section>
 
-  <div
-    id="scrollButton"
-    class="fixed bottom-4 left-20 right-20 flex items-center justify-center"
-  >
-    <button>
+  <div id="scrollButton" class="flex items-center justify-center">
+    <button class="fixed bottom-4">
       <img
         :src="
           direction === 'down'
